@@ -10,7 +10,6 @@ import { Subject } from 'rxjs';
 export class InputBindingComponent implements OnInit {
 
   @Input() parentClick: Subject<void>;
-
   clickCount = 0;
 
   constructor() {}
@@ -20,7 +19,6 @@ export class InputBindingComponent implements OnInit {
 
   incrementValue(i?) {
     console.log(i);
-    
     this.clickCount = i;
   }
 
